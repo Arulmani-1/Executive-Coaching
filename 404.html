@@ -48,7 +48,16 @@
       text-shadow: 0 0 60px rgba(0, 255, 204, 0.3);
       display: inline-block;
       letter-spacing: -5px;
-      animation: jump404 2s ease-in-out infinite;
+      animation: jump404 2s ease-in-out infinite, colorShift 8s linear infinite;
+    }
+
+    @keyframes colorShift {
+      0% { color: #0a0a0a; }
+      20% { color: #B65068; }
+      40% { color: #2e8bc0; }
+      60% { color: #e67e22; }
+      80% { color: #27ae60; }
+      100% { color: #0a0a0a; }
     }
 
     .glitch-404::before {
@@ -154,6 +163,18 @@
       25% { transform: translateX(20px); }
       75% { transform: translateX(-20px); }
     }
+
+    @media (max-width: 576px) {
+      .buttons-wrapper {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+      }
+      .btn-404-outline, .btn-404-solid {
+        width: 100%;
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 <body>
@@ -171,7 +192,7 @@
     </p>
     
     <div class="buttons-wrapper">
-      <a href="javascript:history.back()" class="btn-404-outline">
+      <a href="#" onclick="if(document.referrer) { window.history.back(); } else { window.location.href='index.html'; }; return false;" class="btn-404-outline">
         &larr; GO BACK
       </a>
       <a href="index.html" class="btn-404-solid">
