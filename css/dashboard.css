@@ -95,6 +95,13 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); /* Added shadow to distinguish navbar */
 }
 
+#adminGreeting, #userGreeting {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: 1.5rem !important;
+    color: var(--color-text-primary);
+}
+
 .page-content {
     padding: 3rem;
     flex: 1;

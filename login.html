@@ -389,8 +389,15 @@
       const email = document.getElementById('email').value;
       localStorage.setItem('userEmail', email);
       
-      const users = JSON.parse(localStorage.getItem('users') || '{}');
-      const name = users[email.trim().toLowerCase()];
+      const users = JSON.parse(localStorage.getItem('stackly_users') || '{}');
+      let name = users[email.trim().toLowerCase()];
+      
+      // If name is not found (user skipped signup), extract it from the email
+      if (!name) {
+        let emailPrefix = email.trim().split('@')[0];
+        name = emailPrefix.charAt(0).toUpperCase() + emailPrefix.slice(1);
+      }
+
       if (name) {
         localStorage.setItem('userName', name);
       } else {

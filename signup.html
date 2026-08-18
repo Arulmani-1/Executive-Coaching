@@ -376,11 +376,12 @@
       const lastName = document.getElementById('lastName').value;
       const email = document.getElementById('email').value;
       
-      const users = JSON.parse(localStorage.getItem('users') || '{}');
+      const users = JSON.parse(localStorage.getItem('stackly_users') || '{}');
       if (email && firstName) {
+        // Save full name
         const fullName = (firstName + " " + lastName).trim();
         users[email.trim().toLowerCase()] = fullName;
-        localStorage.setItem('users', JSON.stringify(users));
+        localStorage.setItem('stackly_users', JSON.stringify(users));
       }
       
       // Navigate to login page
