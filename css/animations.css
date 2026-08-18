@@ -1,0 +1,150 @@
+/* 
+===================================================
+ANIMATIONS & PRELOADER
+=================================================== 
+*/
+
+/* Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-footer); /* Near black/dark burgundy */
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.loader-logo {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  font-size: 2rem;
+  color: var(--color-white);
+  opacity: 0; /* Animated by GSAP */
+}
+
+.loader-line-container {
+  width: 200px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.loader-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%; /* Animated by GSAP */
+  background-color: var(--color-burgundy);
+}
+
+.loader-percentage {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  font-family: var(--font-sans);
+  letter-spacing: 0.1em;
+}
+
+/* Page Transition Overlay */
+#page-transition {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-burgundy);
+  z-index: 9998;
+}
+
+/* Clip Path Reveals */
+.clip-reveal {
+  clip-path: inset(100% 0 0 0);
+}
+
+.clip-reveal-left {
+  clip-path: inset(0 100% 0 0);
+}
+
+/* Text Reveals */
+.split-line {
+  overflow: hidden;
+}
+.split-line .split-line-inner {
+  display: inline-block;
+  transform: translateY(100%);
+}
+
+/* GSAP Helper Classes */
+.hide-initial {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Button Magnet/Hover Micro-interaction */
+.magnetic-btn {
+  position: relative;
+}
+
+.magnetic-btn i {
+  transition: transform 0.3s ease;
+}
+
+.btn-primary-custom:hover i {
+  transform: translateX(4px);
+}
+
+/* Process Timeline (Home Page) */
+.process-timeline-container {
+  position: relative;
+  padding-top: 2rem;
+}
+
+.process-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-border);
+}
+
+.process-line-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0%; /* Animated */
+  background-color: var(--color-burgundy);
+}
+
+.process-step {
+  opacity: 0.5;
+  transition: var(--transition-fast);
+}
+
+.process-step.active {
+  opacity: 1;
+}
+
+.process-step-num {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--color-burgundy);
+  margin-bottom: 1rem;
+}
+
+/* Subtle Data Vis SVG */
+.data-vis-line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Coaching | STACKLY</title>
+  <meta name="description" content="High-end executive coaching for leaders navigating complex decisions.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Michroma&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-logo"><img src="assets/logo/logo.webp" alt="STACKLY Logo" height="60" style="filter: invert(1);"></div>
+    <div class="loader-line-container">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-percentage">0%</div>
+  </div>
+
+  <!-- Page Transition Element -->
+  <div id="page-transition"></div>
+
+  <!-- Global Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-3" href="index.html" style="text-decoration: none;">
+        <img src="assets/logo/logo.webp" alt="STACKLY Logo" height="35" style="mix-blend-mode: multiply; filter: brightness(1.1) contrast(1.5);">
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header bg-secondary">
+          <img src="assets/logo/logo.webp" alt="STACKLY Logo" height="28" style="mix-blend-mode: multiply; filter: brightness(1.1) contrast(1.5);">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex flex-column flex-lg-row gap-4 align-items-lg-center">
+            <a href="login.html" class="text-decoration-none navbar-login-link">Log in</a>
+            <a href="signup.html" class="text-decoration-none navbar-start-btn">Start Coaching</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section-padding d-flex align-items-center" style="min-height: 100vh; padding-top: 120px;">
+      <div class="container">
+        <div class="row align-items-center gx-5">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <span class="eyebrow" style="color: var(--color-burgundy);">- Executive Coaching · Est. 2013</span>
+            <h1 class="display-3 fw-bold mt-3 mb-4" style="line-height: 1.2;">
+              The view gets harder<br>
+              to read the <span class="serif-italic-highlight" style="color: var(--color-burgundy); font-family: var(--font-serif); font-style: italic; font-weight: 500;">higher you</span><br>
+              <span class="serif-italic-highlight" style="color: var(--color-burgundy); font-family: var(--font-serif); font-style: italic; font-weight: 500;">climb</span>
+            </h1>
+            <p class="lead" style="max-width: 480px; font-size: 1.1rem; line-height: 1.6; color: var(--color-text);">
+              Meridian works with senior leaders at the point where the next decision is bigger than any they've made before — new mandates, harder rooms, higher stakes. We help you find your bearing again.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="contact.html" class="btn-primary-custom magnetic-btn" style="padding: 12px 24px;">
+                <span>Book a Discovery Call</span>
+              </a>
+              <a href="services.html" class="btn-secondary-custom magnetic-btn" style="padding: 12px 24px;">
+                <span>See How We Work</span>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="hero-img-container image-reveal mouse-parallax mb-4" data-mouse-factor="0.5" style="border-radius: 12px; overflow: hidden;">
+              <img src="assets/images/team_meeting.webp" alt="Team meeting" class="img-fluid parallax w-100" data-speed="0.05" style="object-fit: cover;">
+            </div>
+            
+            <div class="ps-3 ms-2 mt-4" style="border-left: 1px solid var(--color-text-light); opacity: 0.85;">
+              <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6; font-family: var(--font-serif); max-width: 450px;">
+                Meridian is a small practice by design — one lead coach, a short list of clients, and engagements measured in quarters, not sessions. If you're looking for a certification factory, we're not it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA VISUALIZATION SECTION -->
+    <section class="home-data-vis pt-2 pb-5 mt-4">
+      <div class="container">
+        <!-- SVG Graph Row -->
+        <div class="row justify-content-center mb-0">
+          <div class="col-12 text-center">
+            <svg viewBox="0 0 1000 250" class="w-100" style="max-height: 280px;">
+              <!-- Wavy background lines -->
+              <path d="M 50 110 Q 250 100, 500 115 T 950 100" fill="none" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+              <path d="M 50 145 Q 250 135, 500 150 T 950 135" fill="none" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+              <path d="M 50 180 Q 250 170, 500 185 T 950 170" fill="none" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+              <path d="M 50 215 Q 250 205, 500 220 T 950 205" fill="none" stroke="rgba(0,0,0,0.05)" stroke-width="1" />
+              
+              <!-- Main Gold Line -->
+              <path class="data-vis-line" d="M 100 215 L 350 165 L 600 130 L 850 50" fill="none" stroke="#b48c51" stroke-width="1.5" />
+              
+              <!-- Dots -->
+              <circle cx="100" cy="215" r="2.5" fill="#b48c51" />
+              <circle cx="350" cy="165" r="2.5" fill="#b48c51" />
+              <circle cx="600" cy="130" r="2.5" fill="#b48c51" />
+              <circle cx="850" cy="50" r="4.5" fill="#000" />
+              
+              <!-- Text -->
+              <text x="850" y="35" font-family="var(--font-sans)" font-size="9" fill="#b48c51" letter-spacing="1.5" text-anchor="middle" font-weight="600">VANTAGE</text>
+              
+              <!-- Floating Diamond -->
+              <rect x="522" y="235" width="5" height="5" fill="#b48c51" transform="rotate(45 524.5 237.5)" />
+              
+              <!-- Center axis line (faded) -->
+              <line x1="0" y1="230" x2="1000" y2="230" stroke="rgba(0,0,0,0.03)" stroke-width="1" />
+            </svg>
+          </div>
+        </div>
+        
+        <!-- Stats Row -->
+        <div class="row gx-5 text-start mt-3">
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <div style="border-top: 1px solid rgba(0,0,0,0.1); width: 85%; margin-bottom: 2.5rem;"></div>
+            <h3 class="display-5 mb-2" style="font-family: var(--font-serif); color: #111; font-weight: 400;"><span class="counter-anim" data-target="12">0</span></h3>
+            <p class="m-0" style="font-family: var(--font-sans); font-size: 0.65rem; letter-spacing: 0.15em; color: #777; text-transform: uppercase;">Years in Practice</p>
+          </div>
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <div style="border-top: 1px solid rgba(0,0,0,0.1); width: 85%; margin-bottom: 2.5rem;"></div>
+            <h3 class="display-5 mb-2" style="font-family: var(--font-serif); color: #111; font-weight: 400;"><span class="counter-anim" data-target="140" data-suffix="+">0</span></h3>
+            <p class="m-0" style="font-family: var(--font-sans); font-size: 0.65rem; letter-spacing: 0.15em; color: #777; text-transform: uppercase;">Executives Coached</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <div style="border-top: 1px solid rgba(0,0,0,0.1); width: 85%; margin-bottom: 2.5rem;"></div>
+            <h3 class="display-5 mb-2" style="font-family: var(--font-serif); color: #111; font-weight: 400;"><span class="counter-anim" data-target="6">0</span></h3>
+            <p class="m-0" style="font-family: var(--font-sans); font-size: 0.65rem; letter-spacing: 0.15em; color: #777; text-transform: uppercase;">Industries Served</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <div style="border-top: 1px solid rgba(0,0,0,0.1); width: 85%; margin-bottom: 2.5rem;"></div>
+            <h3 class="display-5 mb-2" style="font-family: var(--font-serif); color: #111; font-weight: 400;"><span class="counter-anim" data-target="89" data-suffix="%">0</span></h3>
+            <p class="m-0" style="font-family: var(--font-sans); font-size: 0.65rem; letter-spacing: 0.12em; color: #777; text-transform: uppercase;">Return for a second engagement</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE SHIFT SECTION -->
+    <section class="section-padding bg-secondary">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6" data-aos="fade-up">
+            <span class="eyebrow">The Shift</span>
+            <h2>Something changes at the top that no one prepares you for.</h2>
+          </div>
+          <div class="col-lg-5 offset-lg-1 d-flex align-items-end" data-aos="fade-up" data-aos-delay="100">
+            <p class="m-0">The skills that got you into the room are rarely the ones required to lead it. The transition requires a fundamental rewiring of how you process information, make decisions, and measure success.</p>
+          </div>
+        </div>
+        
+        <div class="row g-4 mt-4">
+          <!-- Card 1 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="premium-card">
+              <div class="eyebrow mb-4">01</div>
+              <h4>The Room Got Quieter</h4>
+              <p class="m-0 mt-3">People tell you less the higher you go. The feedback loop breaks, and silence is often misinterpreted as agreement rather than caution.</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="premium-card">
+              <div class="eyebrow mb-4">02</div>
+              <h4>The Scoreboard Changed</h4>
+              <p class="m-0 mt-3">Individual output no longer measures your value. Your success is now determined entirely by your ability to architect the output of others.</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="premium-card">
+              <div class="eyebrow mb-4">03</div>
+              <h4>The Stakes Compounded</h4>
+              <p class="m-0 mt-3">A mistake at leadership level carries a different weight. The blast radius of a poor decision is exponential, not linear.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW WE WORK SECTION -->
+    <section class="section-padding" style="background-color: var(--color-bg-light);">
+      <div class="container">
+        <!-- Header -->
+        <div class="row mb-5">
+          <div class="col-lg-7" data-aos="fade-up">
+            <span class="eyebrow" style="color: var(--color-burgundy); letter-spacing: 0.15em;">- How We Work</span>
+            <h2 class="display-5 fw-normal mt-3 mb-4" style="line-height: 1.2; font-family: var(--font-serif); color: var(--color-text-primary); letter-spacing: -0.02em;">
+              A method built on sequence,<br>not sessions
+            </h2>
+            <p class="lead m-0" style="font-size: 1.05rem; line-height: 1.6; max-width: 600px; color: #444; font-family: var(--font-serif);">
+              Every engagement moves through the same four stages. The pace is set by the client, but the order doesn't change — each stage gives the next one something to work with.
+            </p>
+          </div>
+        </div>
+        
+        <!-- List -->
+        <div class="work-stages-list mt-5 pt-3">
+          <!-- Stage 1 -->
+          <div class="row py-5 border-top work-stage-row" style="border-color: rgba(0,0,0,0.1) !important;" data-aos="fade-up">
+            <div class="col-12 col-md-2 col-lg-3 mb-3 mb-md-0">
+              <span style="color: var(--color-burgundy); letter-spacing: 0.25em; font-family: var(--font-sans); font-size: 0.95rem;">0 1</span>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mb-3 mb-md-0">
+              <h5 class="m-0" style="font-family: var(--font-serif); font-weight: 700; color: #333;">Calibrate</h5>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <p class="m-0" style="font-family: var(--font-serif); font-size: 1.05rem; line-height: 1.7; color: #444;">
+                Two weeks of structured listening — with you, and with a short list of people who work around you — to find the gap between how you intend to lead and how it's landing.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Stage 2 -->
+          <div class="row py-5 border-top work-stage-row" style="border-color: rgba(0,0,0,0.1) !important;" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-12 col-md-2 col-lg-3 mb-3 mb-md-0">
+              <span style="color: var(--color-burgundy); letter-spacing: 0.25em; font-family: var(--font-sans); font-size: 0.95rem;">0 2</span>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mb-3 mb-md-0">
+              <h5 class="m-0" style="font-family: var(--font-serif); font-weight: 700; color: #333;">Confront</h5>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <p class="m-0" style="font-family: var(--font-serif); font-size: 1.05rem; line-height: 1.7; color: #444;">
+                The findings, without the varnish. Most engagements turn on this conversation — it's usually the first time the pattern has been said plainly.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Stage 3 -->
+          <div class="row py-5 border-top work-stage-row" style="border-color: rgba(0,0,0,0.1) !important;" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-12 col-md-2 col-lg-3 mb-3 mb-md-0">
+              <span style="color: var(--color-burgundy); letter-spacing: 0.25em; font-family: var(--font-sans); font-size: 0.95rem;">0 3</span>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mb-3 mb-md-0">
+              <h5 class="m-0" style="font-family: var(--font-serif); font-weight: 700; color: #333;">Rebuild</h5>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <p class="m-0" style="font-family: var(--font-serif); font-size: 1.05rem; line-height: 1.7; color: #444;">
+                Weekly sessions to redesign specific habits: how you run a room, how you delegate a decision, how you deliver news you'd rather not.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Stage 4 -->
+          <div class="row py-5 border-top border-bottom work-stage-row" style="border-color: rgba(0,0,0,0.1) !important;" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-12 col-md-2 col-lg-3 mb-3 mb-md-0">
+              <span style="color: var(--color-burgundy); letter-spacing: 0.25em; font-family: var(--font-sans); font-size: 0.95rem;">0 4</span>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mb-3 mb-md-0">
+              <h5 class="m-0" style="font-family: var(--font-serif); font-weight: 700; color: #333;">Hold</h5>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <p class="m-0" style="font-family: var(--font-serif); font-size: 1.05rem; line-height: 1.7; color: #444;">
+                A longer cadence of check-ins to keep the new pattern from sliding back under pressure — usually the actual test of whether it worked.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COACH FEATURE SECTION -->
+    <section class="bg-burgundy text-white position-relative" style="overflow: hidden;">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-lg-6 d-flex align-items-center section-padding">
+            <div class="px-5 px-lg-5 w-100" style="max-width: 600px; margin: 0 auto;">
+              <span class="eyebrow text-white opacity-75">Your Coach</span>
+              <h2 class="display-5 text-white mb-4">Renata Kessler, PCC</h2>
+              <p class="lead" style="color: rgba(255,255,255,0.8);">
+                A former executive turned organizational psychologist, Renata brings a rare combination of boardroom pragmatism and clinical rigor to her engagements.
+              </p>
+              <p style="color: rgba(255,255,255,0.6);">
+                "I don't offer generic affirmations. I offer a mirror, a framework, and accountability. We identify what is holding you back, and we dismantle it systematically."
+              </p>
+              <a href="about.html" class="btn-secondary-custom mt-4 text-white" style="border-color: rgba(255,255,255,0.3);">
+                <span>Read The Long Version</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="h-100 image-reveal" style="min-height: 50vh;">
+              <img src="assets/images/coach_portrait.webp" alt="Renata Kessler" class="img-fluid h-100 w-100 parallax" style="object-fit: cover;" data-speed="0.08">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE OFFER -->
+    <section class="section-padding">
+      <div class="container">
+        <!-- Top Image -->
+        <div class="row justify-content-center mb-5" data-aos="fade-up">
+          <div class="col-lg-10">
+            <img src="assets/images/what_we_offer.webp" alt="Team hands stacked" class="img-fluid w-100 shadow-sm" style="border-radius: 1rem; height: 350px; object-fit: cover; object-position: center;">
+          </div>
+        </div>
+
+        <!-- Header -->
+        <div class="row justify-content-center mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-10">
+            <span class="eyebrow" style="color: var(--color-burgundy); letter-spacing: 0.15em;">- What We Offer</span>
+            <h2 class="display-6 fw-bold mt-3 mb-3" style="line-height: 1.2; font-family: var(--font-serif); color: var(--color-text-primary);">
+              Three ways to work together.
+            </h2>
+            <p class="m-0" style="font-family: var(--font-serif); font-size: 1.1rem; line-height: 1.6; max-width: 450px; color: var(--color-text-primary);">
+              Every engagement is built around the client, but they tend to fall into one of three shapes.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Cards -->
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-10">
+            <div class="row g-4">
+              <!-- Card 1 -->
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-100 d-flex flex-column offer-card" style="background-color: var(--color-bg-secondary); border-radius: 1rem; padding: 2.5rem 2rem;">
+                  <span style="color: var(--color-burgundy); letter-spacing: 0.15em; font-size: 0.85rem; font-family: var(--font-sans); margin-bottom: 1rem;">Individual</span>
+                  <h4 style="font-family: var(--font-serif); font-weight: 700; color: var(--color-text-primary); font-size: 1.1rem; margin-bottom: 0.5rem;">1:1 Executive Coaching</h4>
+                  <p class="flex-grow-1 m-0" style="font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.5; color: var(--color-text-primary);">
+                    A confidential, ongoing partnership for a single leader — typically 6 to 12 months.
+                  </p>
+                  <a href="services.html" class="text-decoration-none mt-4" style="color: var(--color-burgundy); letter-spacing: 0.15em; font-size: 0.85rem; font-family: var(--font-sans);">
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Card 2 -->
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="h-100 d-flex flex-column offer-card" style="background-color: var(--color-bg-secondary); border-radius: 1rem; padding: 2.5rem 2rem;">
+                  <span style="color: var(--color-burgundy); letter-spacing: 0.15em; font-size: 0.85rem; font-family: var(--font-sans); margin-bottom: 1rem;">Team</span>
+                  <h4 style="font-family: var(--font-serif); font-weight: 700; color: var(--color-text-primary); font-size: 1.1rem; margin-bottom: 0.5rem;">Leadership Team Coaching</h4>
+                  <p class="flex-grow-1 m-0" style="font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.5; color: var(--color-text-primary);">
+                    For the executive team that's technically aligned but not actually pulling together.
+                  </p>
+                  <a href="services.html" class="text-decoration-none mt-4" style="color: var(--color-burgundy); letter-spacing: 0.15em; font-size: 0.85rem; font-family: var(--font-sans);">
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Card 3 -->
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="h-100 d-flex flex-column offer-card" style="background-color: var(--color-bg-secondary); border-radius: 1rem; padding: 2.5rem 2rem;">
+                  <span style="color: var(--color-burgundy); letter-spacing: 0.15em; font-size: 0.85rem; font-family: var(--font-sans); margin-bottom: 1rem;">Transition</span>
+                  <h4 style="font-family: var(--font-serif); font-weight: 700; color: var(--color-text-primary); font-size: 1.1rem; margin-bottom: 0.5rem;">First 100 Days</h4>
+                  <p class="flex-grow-1 m-0" style="font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.5; color: var(--color-text-primary);">
+                    Focused support for leaders stepping into a new mandate, merger, or C-suite seat.
+                  </p>
+                  <a href="services.html" class="text-decoration-none mt-4" style="color: var(--color-burgundy); letter-spacing: 0.15em; font-size: 0.85rem; font-family: var(--font-sans);">
+                    Learn more
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section-padding bg-secondary">
+      <div class="container">
+        <div class="mb-5 text-center" data-aos="fade-up">
+          <span class="eyebrow">In Their Words</span>
+          <h2>What changes, according to the people who did it.</h2>
+        </div>
+        
+        <div id="testimonialCarousel" class="carousel slide mt-5 px-md-5" data-bs-ride="carousel" data-bs-interval="4000" data-aos="fade-up">
+          <!-- Indicators -->
+          <div class="carousel-indicators" style="bottom: -50px;">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: var(--color-burgundy); width: 10px; height: 10px; border-radius: 50%; margin: 0 6px;"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: var(--color-burgundy); width: 10px; height: 10px; border-radius: 50%; margin: 0 6px;"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: var(--color-burgundy); width: 10px; height: 10px; border-radius: 50%; margin: 0 6px;"></button>
+          </div>
+
+          <!-- Carousel Inner -->
+          <div class="carousel-inner pb-4">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-10 col-md-8">
+                  <div class="border-start border-2 ps-4 ps-md-5" style="border-color: var(--color-burgundy) !important;">
+                    <i class="bi bi-quote fs-1 text-burgundy opacity-25"></i>
+                    <p class="fs-4 fst-italic text-dark mt-2" style="line-height: 1.6;">"The ROI isn't just in the decisions I make now, it's in the speed at which I make them. Renata removed the noise."</p>
+                    <div class="d-flex align-items-center mt-4">
+                      <img src="assets/images/avatar_ceo.webp" alt="CEO" style="width: 55px; height: 55px; border-radius: 50%; object-fit: cover; border: 2px solid white;" class="me-3 shadow-sm">
+                      <div>
+                        <p class="fw-semibold m-0 text-dark">CEO</p>
+                        <p class="small m-0 text-muted">Series C Tech Startup</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-10 col-md-8">
+                  <div class="border-start border-2 ps-4 ps-md-5" style="border-color: var(--color-burgundy) !important;">
+                    <i class="bi bi-quote fs-1 text-burgundy opacity-25"></i>
+                    <p class="fs-4 fst-italic text-dark mt-2" style="line-height: 1.6;">"I thought I needed strategic advice. I actually needed someone to point out how my own behavior was bottlenecking the firm."</p>
+                    <div class="d-flex align-items-center mt-4">
+                      <img src="assets/images/avatar_partner.webp" alt="Managing Partner" style="width: 55px; height: 55px; border-radius: 50%; object-fit: cover; border: 2px solid white;" class="me-3 shadow-sm">
+                      <div>
+                        <p class="fw-semibold m-0 text-dark">Managing Partner</p>
+                        <p class="small m-0 text-muted">Private Equity Firm</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-10 col-md-8">
+                  <div class="border-start border-2 ps-4 ps-md-5" style="border-color: var(--color-burgundy) !important;">
+                    <i class="bi bi-quote fs-1 text-burgundy opacity-25"></i>
+                    <p class="fs-4 fst-italic text-dark mt-2" style="line-height: 1.6;">"The First 100 Days program completely changed my trajectory. I avoided three major political landmines in my first month."</p>
+                    <div class="d-flex align-items-center mt-4">
+                      <img src="assets/images/avatar_cmo.webp" alt="CMO" style="width: 55px; height: 55px; border-radius: 50%; object-fit: cover; border: 2px solid white;" class="me-3 shadow-sm">
+                      <div>
+                        <p class="fw-semibold m-0 text-dark">CMO</p>
+                        <p class="small m-0 text-muted">Fortune 500 Retail</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" style="width: auto; filter: invert(1);">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 2.5rem; height: 2.5rem;"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" style="width: auto; filter: invert(1);">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="width: 2.5rem; height: 2.5rem;"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section-padding text-white text-center position-relative" style="background-color: var(--color-footer); overflow: hidden;">
+      <div class="container position-relative z-1" data-aos="zoom-in" data-aos-duration="1200">
+        <h2 class="display-4 text-white mb-4">A 30-minute call tells us both if this is a fit.</h2>
+        <p class="lead mx-auto mb-5" style="max-width: 600px; color: rgba(255,255,255,0.7);">
+          No pitch, no obligation — just a conversation about where you're stuck and whether STACKLY is built to help with it.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="contact.html" class="btn-primary-custom magnetic-btn" style="background-color: var(--color-white); color: var(--color-footer); border-color: var(--color-white);">
+            <span>Book a Discovery Call</span>
+          </a>
+          <a href="services.html" class="btn-secondary-custom magnetic-btn text-white" style="border-color: rgba(255,255,255,0.3);">
+            <span>See How We Work</span>
+          </a>
+        </div>
+      </div>
+      <!-- Decorative background -->
+      <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10 mouse-parallax" data-mouse-factor="0.2" style="background-image: radial-gradient(circle at center, var(--color-burgundy) 0%, transparent 60%);"></div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-5 mb-4 mb-lg-0 pr-lg-5">
+          <a href="index.html" class="footer-logo text-decoration-none"><img src="assets/logo/logo.webp" alt="STACKLY Logo" height="40" style="filter: invert(1);"></a>
+          <p class="mt-4" style="max-width: 300px;">Executive coaching for leaders navigating the decisions that define them. Based in Chicago, working worldwide.</p>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h5 style="color: #FF4D6D;">Site</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Journal</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h5 style="color: #FF4D6D;">Account</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="blog.html">Journal</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5 style="color: #FF4D6D;">Connect</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="mailto:hello@stackly.com">hello@stackly.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row pt-4 border-top" style="border-color: rgba(255,255,255,0.1) !important;">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="small m-0">&copy; 2026 STACKLY Executive Coaching. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+          <a href="#" class="small me-3">Privacy Policy</a>
+          <a href="#" class="small">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <script src="js/loader.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

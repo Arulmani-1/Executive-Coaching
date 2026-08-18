@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | STACKLY Executive Coaching</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Michroma&display=swap" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="loader-logo"><img src="assets/logo/logo.webp" alt="STACKLY Logo" height="60" style="filter: invert(1);"></div>
+    <div class="loader-line-container"><div class="loader-line"></div></div>
+    <div class="loader-percentage">0%</div>
+  </div>
+  <div id="page-transition"></div>
+
+  <!-- Global Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-3" href="index.html" style="text-decoration: none;">
+        <img src="assets/logo/logo.webp" alt="STACKLY Logo" height="35" style="mix-blend-mode: multiply; filter: brightness(1.1) contrast(1.5);">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header bg-secondary">
+          <img src="assets/logo/logo.webp" alt="STACKLY Logo" height="28" style="mix-blend-mode: multiply; filter: brightness(1.1) contrast(1.5);">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <div class="d-flex flex-column flex-lg-row gap-4 align-items-lg-center">
+            <a href="login.html" class="text-decoration-none navbar-login-link">Log in</a>
+            <a href="signup.html" class="text-decoration-none navbar-start-btn">Start Coaching</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="section-padding position-relative" style="padding-top: 150px; background-color: var(--color-bg-secondary);">
+      <div class="container">
+        <span class="eyebrow hide-initial text-reveal" style="visibility: visible; opacity: 1; color: var(--color-burgundy); letter-spacing: 0.15em;">- Executive Coaching · Est. 2013</span>
+        <h1 class="fw-bold mt-4 mb-4 hide-initial text-reveal" style="visibility: visible; opacity: 1; font-family: var(--font-serif); color: var(--color-text-primary); line-height: 1.3; font-size: 3.5rem; max-width: 800px;">
+          Three engagement shapes.<br>One standard of <span class="serif-italic-highlight">rigor.</span>
+        </h1>
+        <p class="mt-4 hide-initial text-reveal" style="visibility: visible; opacity: 1; font-family: var(--font-serif); font-size: 1.05rem; line-height: 1.6; color: var(--color-text-primary); max-width: 600px;">
+          Every client starts with a calibration conversation before we agree on scope — so what follows here is a starting point, not a fixed menu.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICE 01 -->
+    <section class="section-padding border-top-thin">
+      <div class="container">
+        <div class="row align-items-center gx-5">
+          <div class="col-lg-7 mb-5 mb-lg-0" data-aos="fade-right">
+            <div class="mb-4">
+              <span class="eyebrow m-0" style="border: 1px solid rgba(0,0,0,0.3); border-radius: 50px; padding: 0.4rem 1.25rem; display: inline-block; letter-spacing: 0.2em; font-size: 0.75rem; color: rgba(0,0,0,0.6);">01 &middot; Individual</span>
+            </div>
+            <h2>1:1 Executive Coaching</h2>
+            <p class="mb-4">A confidential, ongoing partnership with one leader focused on behavioral change and strategic decision making.</p>
+            <ul class="list-unstyled d-flex flex-column gap-3 mb-5">
+              <li><i class="bi bi-check2 text-burgundy me-2"></i> Confidential partnership</li>
+              <li><i class="bi bi-check2 text-burgundy me-2"></i> 360° calibration</li>
+              <li><i class="bi bi-check2 text-burgundy me-2"></i> Weekly / biweekly sessions</li>
+              <li><i class="bi bi-check2 text-burgundy me-2"></i> Direct line for time-sensitive decisions</li>
+              <li><i class="bi bi-check2 text-burgundy me-2"></i> Typical length: 6–12 months</li>
+            </ul>
+            <a href="contact.html" class="btn-primary-custom magnetic-btn">
+              <span>Inquire</span>
+            </a>
+          </div>
+          <div class="col-lg-4 offset-lg-1" data-aos="fade-left">
+            <div class="premium-card bg-secondary">
+              <span class="eyebrow mb-2 d-block" style="color: var(--color-burgundy); letter-spacing: 0.15em;">Best Fit For</span>
+              <h4 class="mt-2 mb-3" style="font-family: var(--font-serif); font-weight: 700; color: var(--color-text-primary); font-size: 1.1rem;">Leaders facing a step-change</h4>
+              <p style="font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.5; color: var(--color-text-primary); margin: 0;">New CEOs, executives inheriting a much larger org, and leaders whose 360 feedback keeps circling the same unresolved issue.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE 02 -->
+    <section class="section-padding border-top-thin bg-secondary">
+      <div class="container">
+        <div class="row align-items-center gx-5 flex-lg-row-reverse">
+          <div class="col-lg-7 mb-5 mb-lg-0" data-aos="fade-left">
+            <div class="mb-4">
+              <span class="eyebrow m-0" style="border: 1px solid rgba(0,0,0,0.3); border-radius: 50px; padding: 0.4rem 1.25rem; display: inline-block; letter-spacing: 0.2em; font-size: 0.75rem; color: rgba(0,0,0,0.6);">A02 &middot; Team</span>
+            </div>
+            <h2>Leadership Team Coaching</h2>
+            <p class="mb-4">For the leadership team that's technically aligned but not actually pulling together. We work with the intact team — usually 5 to 9 people — through structured sessions that surface what the quarterly offsite never quite gets to.</p>
+            <ul class="list-unstyled d-flex flex-column gap-3 mb-5">
+              <li style="color: var(--color-text-primary); font-size: 0.95rem;">&mdash; Confidential 1:1 interviews with every team member</li>
+              <li style="color: var(--color-text-primary); font-size: 0.95rem;">&mdash; A shared, named diagnosis presented back to the team</li>
+              <li style="color: var(--color-text-primary); font-size: 0.95rem;">&mdash; Monthly facilitated sessions over 2-3 quarters</li>
+              <li style="color: var(--color-text-primary); font-size: 0.95rem;">&mdash; Optional coaching for individual members alongside</li>
+            </ul>
+            <a href="contact.html" class="btn-primary-custom magnetic-btn">
+              <span>Inquire</span>
+            </a>
+          </div>
+          <div class="col-lg-4 offset-lg-1" data-aos="fade-right">
+            <div class="premium-card" style="background-color: #FFFFFF !important;">
+              <span class="eyebrow mb-2 d-block" style="color: var(--color-burgundy); letter-spacing: 0.15em; text-transform: uppercase;">Best Fit For</span>
+              <h4 class="mt-2 mb-3" style="font-family: var(--font-serif); font-weight: 700; color: var(--color-text-primary); font-size: 1.1rem;">Teams that are aligned on paper</h4>
+              <p style="font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.5; color: var(--color-text-primary); margin: 0;">Executive teams where the org chart says "we're one team" but the meetings say otherwise &mdash; competing agendas, unspoken rivalries, or a founder who hasn't let go.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE 03 -->
+    <section class="section-padding border-top-thin">
+      <div class="container">
+        <div class="row align-items-center gx-5">
+          <div class="col-lg-7 mb-5 mb-lg-0" data-aos="fade-right">
+            <div class="mb-4">
+              <span class="eyebrow m-0" style="border: 1px solid rgba(0,0,0,0.3); border-radius: 50px; padding: 0.4rem 1.25rem; display: inline-block; letter-spacing: 0.2em; font-size: 0.75rem; color: rgba(0,0,0,0.6);">03 &middot; Transition</span>
+            </div>
+            <h2>First 100 Days</h2>
+            <p class="mb-4">Focused support for leaders stepping into a new mandate. The goal is to accelerate time to value while avoiding the common traps of early leadership transitions.</p>
+            <ul class="list-unstyled d-flex flex-column gap-3 mb-5">
+              <li><i class="bi bi-check2 text-burgundy me-2"></i> Transition coaching for senior leaders</li>
+              <li><i class="bi bi-check2 text-burgundy me-2"></i> Stakeholder mapping</li>
+              <li><i class="bi bi-check2 text-burgundy me-2"></i> Early win identification</li>
+              <li><i class="bi bi-check2 text-burgundy me-2"></i> Communication strategy</li>
+            </ul>
+            <a href="contact.html" class="btn-primary-custom magnetic-btn">
+              <span>Inquire</span>
+            </a>
+          </div>
+          <div class="col-lg-4 offset-lg-1" data-aos="fade-left">
+            <div class="premium-card bg-secondary">
+              <span class="eyebrow mb-2 d-block" style="color: var(--color-burgundy); letter-spacing: 0.15em;">Best Fit For</span>
+              <h4 class="mt-2 mb-3" style="font-family: var(--font-serif); font-weight: 700; color: var(--color-text-primary); font-size: 1.1rem;">Executives entering a new role, mandate or organization.</h4>
+              <p style="font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.5; color: var(--color-text-primary); margin: 0;">Leaders taking on a significantly larger P&L, moving to a new company, or tasked with a turnaround where the runway is short.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPECTATION SECTION -->
+    <section class="section-padding bg-burgundy text-white">
+      <div class="container">
+        <div class="mb-5" data-aos="fade-up">
+          <span class="eyebrow d-block mb-3" style="color: rgba(255,255,255,0.7); letter-spacing: 0.15em;">- What to Expect</span>
+          <h2 class="text-white mb-4" style="font-family: var(--font-serif); font-size: 3rem; line-height: 1.2;">Every engagement is scoped<br>individually.</h2>
+          <p style="color: rgba(255,255,255,0.8); max-width: 600px; font-size: 1.05rem; font-family: var(--font-serif); line-height: 1.6;">Fees vary with scope and duration and are agreed before anything begins &mdash; no rate cards, no surprises. As a rough guide:</p>
+        </div>
+        
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="p-4 p-lg-5 h-100 glass-card" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; backdrop-filter: blur(10px);">
+              <span class="eyebrow d-block mb-3" style="color: rgba(255,255,255,0.9); letter-spacing: 0.15em; font-size: 0.85rem;">Individual</span>
+              <h4 class="text-white mb-4" style="font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem;">1:1 Coaching</h4>
+              <p style="color: rgba(255,255,255,0.8); font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.6; margin: 0;">Quoted per quarter, billed monthly. Includes the initial calibration and unlimited async contact.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="p-4 p-lg-5 h-100 glass-card" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; backdrop-filter: blur(10px);">
+              <span class="eyebrow d-block mb-3" style="color: rgba(255,255,255,0.9); letter-spacing: 0.15em; font-size: 0.85rem;">Team</span>
+              <h4 class="text-white mb-4" style="font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem;">Team Coaching</h4>
+              <p style="color: rgba(255,255,255,0.8); font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.6; margin: 0;">Quoted per engagement, based on team size and number of sessions.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="p-4 p-lg-5 h-100 glass-card" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; backdrop-filter: blur(10px);">
+              <span class="eyebrow d-block mb-3" style="color: rgba(255,255,255,0.9); letter-spacing: 0.15em; font-size: 0.85rem;">Transition</span>
+              <h4 class="text-white mb-4" style="font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem;">First 100 Days</h4>
+              <p style="color: rgba(255,255,255,0.8); font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.6; margin: 0;">Fixed fee for the 100-day sprint, with the option to roll into ongoing coaching.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE JOURNAL SECTION -->
+    <section class="section-padding" style="background-color: var(--color-bg-secondary);">
+      <div class="container">
+        <!-- Header -->
+        <div class="mb-5" data-aos="fade-up">
+          <span class="eyebrow d-block mb-3" style="color: var(--color-burgundy); letter-spacing: 0.15em;">- The Journal</span>
+          <h2 class="mb-2" style="font-family: var(--font-serif); font-size: 2.8rem; font-weight: 700; color: var(--color-text-primary); line-height: 1.2;">
+            Notes from the room, on<br>the habits that<br>
+            <span style="color: var(--color-burgundy); font-style: italic; font-weight: normal;">hold up under pressure</span>
+          </h2>
+          <p class="mt-4" style="color: var(--color-text-primary); font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.5; max-width: 500px;">
+            Short, specific pieces &mdash; no listicles, no motivational filler. Written for people who are already senior and just want the sharpest version of the idea.
+          </p>
+        </div>
+
+        <!-- Featured Card -->
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-12">
+            <div class="row g-0 overflow-hidden shadow-sm" style="background-color: #fcfbfa; border: 1px solid rgba(0,0,0,0.05);">
+              <div class="col-lg-4" style="min-height: 300px;">
+                <img src="assets/images/journal_room.webp" alt="Featured Journal" style="width: 100%; height: 100%; object-fit: cover; border-right: 1px solid rgba(0,0,0,0.05);">
+              </div>
+              <div class="col-lg-8 p-4 p-lg-5 d-flex flex-column justify-content-center">
+                <div class="mb-4">
+                  <span class="eyebrow d-inline-block" style="border: 1px solid rgba(0,0,0,0.3); border-radius: 50px; padding: 0.4rem 1.25rem; font-size: 0.75rem; letter-spacing: 0.15em; color: rgba(0,0,0,0.6);">Featured &middot; Decision-Making</span>
+                </div>
+                <h4 class="mb-3" style="font-family: var(--font-serif); font-weight: 700; font-size: 1.3rem; color: var(--color-text-primary);">Why the best executives ask fewer<br>questions in the room, not more</h4>
+                <p class="mb-4" style="font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary);">
+                  Most leaders are coached to ask more questions. The ones who run the sharpest meetings do the opposite &mdash; they've learned exactly which three questions matter and stop there.
+                </p>
+                <a href="#" class="text-decoration-none" style="color: var(--color-burgundy); font-family: var(--font-sans); font-weight: 600; letter-spacing: 0.15em; font-size: 0.85rem; text-transform: uppercase;">
+                  - Read the piece
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENT PIECES SECTION -->
+    <section class="section-padding pt-0" style="background-color: var(--color-bg-secondary);">
+      <div class="container">
+        <!-- Header -->
+        <div class="mb-5" data-aos="fade-up">
+          <span class="eyebrow d-block mb-3" style="color: var(--color-burgundy); letter-spacing: 0.15em;">- Browse by Topic</span>
+          <h2 class="mb-4" style="font-family: var(--font-serif); font-size: 2.2rem; font-weight: 700; color: var(--color-text-primary);">
+            Recent pieces.
+          </h2>
+          
+          <!-- Filter Pills -->
+          <div class="d-flex flex-wrap gap-3 filter-container">
+            <span class="btn-filter active" data-filter="all" style="background-color: #b05c6d; color: #F9F6F0; border-radius: 50px; padding: 0.4rem 1.5rem; font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.15em; cursor: pointer;">All</span>
+            <span class="btn-filter" data-filter="decisions" style="background-color: #F9F6F0; color: var(--color-text-primary); border-radius: 50px; padding: 0.4rem 1.5rem; font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.15em; cursor: pointer;">Decision-Making</span>
+            <span class="btn-filter" data-filter="teams" style="background-color: #F9F6F0; color: var(--color-text-primary); border-radius: 50px; padding: 0.4rem 1.5rem; font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.15em; cursor: pointer;">Teams</span>
+            <span class="btn-filter" data-filter="transitions" style="background-color: #F9F6F0; color: var(--color-text-primary); border-radius: 50px; padding: 0.4rem 1.5rem; font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.15em; cursor: pointer;">Transitions</span>
+            <span class="btn-filter" data-filter="communication" style="background-color: #F9F6F0; color: var(--color-text-primary); border-radius: 50px; padding: 0.4rem 1.5rem; font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.15em; cursor: pointer;">Communication</span>
+          </div>
+        </div>
+
+        <!-- Grid of Cards -->
+        <div class="row g-4 filter-grid" data-aos="fade-up" data-aos-delay="100">
+          
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4 filter-item" data-category="teams">
+            <div class="p-4 p-lg-5 h-100 offer-card" style="background-color: #fcfbfa; border: 1px solid rgba(0,0,0,0.05);">
+              <span class="eyebrow d-block mb-3" style="color: var(--color-burgundy); letter-spacing: 0.15em;">Teams</span>
+              <h4 class="mb-3" style="font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem; color: var(--color-text-primary);">The offsite fixed nothing, and here's why</h4>
+              <p style="font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin: 0;">Alignment built in a retreat rarely survives contact with a normal Tuesday. What actually changes team behavior looks nothing like a retreat.</p>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4 filter-item" data-category="transitions">
+            <div class="p-4 p-lg-5 h-100 offer-card" style="background-color: #fcfbfa; border: 1px solid rgba(0,0,0,0.05);">
+              <span class="eyebrow d-block mb-3" style="color: var(--color-burgundy); letter-spacing: 0.15em;">Transitions</span>
+              <h4 class="mb-3" style="font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem; color: var(--color-text-primary);">Your first 30 days should have almost no decisions in it</h4>
+              <p style="font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin: 0;">New leaders rush to prove themselves with early calls. The ones who last longer spend the first month mapping the terrain instead.</p>
+            </div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4 filter-item" data-category="communication">
+            <div class="p-4 p-lg-5 h-100 offer-card" style="background-color: #fcfbfa; border: 1px solid rgba(0,0,0,0.05);">
+              <span class="eyebrow d-block mb-3" style="color: var(--color-burgundy); letter-spacing: 0.15em;">Communication</span>
+              <h4 class="mb-3" style="font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem; color: var(--color-text-primary);">The feedback you're not getting anymore, and how to ask for it back</h4>
+              <p style="font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin: 0;">Seniority filters out the very input you need most. A practical way to reopen the channel without making it awkward.</p>
+            </div>
+          </div>
+          
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4 filter-item" data-category="decisions">
+            <div class="p-4 p-lg-5 h-100 offer-card" style="background-color: #fcfbfa; border: 1px solid rgba(0,0,0,0.05);">
+              <span class="eyebrow d-block mb-3" style="color: var(--color-burgundy); letter-spacing: 0.15em;">Decisions</span>
+              <h4 class="mb-3" style="font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem; color: var(--color-text-primary);">Delegation isn't handing off tasks &mdash; it's handing off judgment</h4>
+              <p style="font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin: 0;">Most delegation fails because the task moves but the decision-making authority quietly doesn't.</p>
+            </div>
+          </div>
+          
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4 filter-item" data-category="teams">
+            <div class="p-4 p-lg-5 h-100 offer-card" style="background-color: #fcfbfa; border: 1px solid rgba(0,0,0,0.05);">
+              <span class="eyebrow d-block mb-3" style="color: var(--color-burgundy); letter-spacing: 0.15em;">Teams</span>
+              <h4 class="mb-3" style="font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem; color: var(--color-text-primary);">What a genuinely aligned leadership team sounds like</h4>
+              <p style="font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin: 0;">It's quieter than you'd expect, and the disagreement happens earlier, not later, in the process.</p>
+            </div>
+          </div>
+          
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-4 filter-item" data-category="communication">
+            <div class="p-4 p-lg-5 h-100 offer-card" style="background-color: #fcfbfa; border: 1px solid rgba(0,0,0,0.05);">
+              <span class="eyebrow d-block mb-3" style="color: var(--color-burgundy); letter-spacing: 0.15em;">Communication</span>
+              <h4 class="mb-3" style="font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem; color: var(--color-text-primary);">Delivering hard news without rehearsing the apology first</h4>
+              <p style="font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin: 0;">A short structure for conversations you've been avoiding, built around clarity rather than cushioning.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ CTA SECTION -->
+    <section class="section-padding" style="background-color: var(--color-bg-secondary);">
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+            <span class="eyebrow d-block mb-3" style="color: var(--color-burgundy); letter-spacing: 0.15em;">Work Together</span>
+            <h2 class="mb-5" style="font-family: var(--font-serif); font-size: 2.2rem; font-weight: 700; line-height: 1.4; color: var(--color-text-primary);">
+              If this sounds like the kind of direct you're after, let's talk.
+            </h2>
+            <a href="contact.html" class="btn" style="background-color: #b05c6d; color: #F9F6F0; border-radius: 8px; padding: 0.75rem 1.5rem; font-family: var(--font-serif); font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#9b4e5b'; this.style.transform='translateY(-2px)'" onmouseout="this.style.backgroundColor='#b05c6d'; this.style.transform='translateY(0)'">Book a Discovery Call</a>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="faq-item" style="border-top: 1px solid rgba(0,0,0,0.1); padding: 1.5rem 0;">
+              <h5 style="font-family: var(--font-serif); font-weight: 700; font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--color-text-primary);">Is my sponsor or board involved?</h5>
+              <p style="font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.6; margin: 0; color: var(--color-text-primary);">Only with your consent, and only at the level of themes and progress &mdash; never session content.</p>
+            </div>
+            <div class="faq-item" style="border-top: 1px solid rgba(0,0,0,0.1); padding: 1.5rem 0;">
+              <h5 style="font-family: var(--font-serif); font-weight: 700; font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--color-text-primary);">Do you work outside Chicago?</h5>
+              <p style="font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.6; margin: 0; color: var(--color-text-primary);">Yes &mdash; most engagements run over video, with in-person sessions arranged as needed.</p>
+            </div>
+            <div class="faq-item" style="border-top: 1px solid rgba(0,0,0,0.1); padding: 1.5rem 0;">
+              <h5 style="font-family: var(--font-serif); font-weight: 700; font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--color-text-primary);">What if it's not a fit?</h5>
+              <p style="font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.6; margin: 0; color: var(--color-text-primary);">We'll tell you directly after the discovery call, and point you toward someone better suited if we can.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL DARK CTA SECTION -->
+    <section class="section-padding text-center" style="background: radial-gradient(ellipse at center, #632d3f 0%, #150609 50%, #060102 100%); padding: 8rem 1rem;">
+      <div class="container" data-aos="fade-up">
+        <h2 class="mb-4" style="font-family: var(--font-serif); font-size: 3.5rem; color: #ffffff; font-weight: 400;">
+          A 30-minute call tells us both if this is a fit.
+        </h2>
+        <p class="mb-5 mx-auto" style="color: rgba(255,255,255,0.7); max-width: 600px; font-size: 1.1rem; line-height: 1.6;">
+          No pitch, no obligation &mdash; just a conversation about where you're stuck and whether STACKLY is built to help with it.
+        </p>
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+          <a href="contact.html" class="btn" style="background-color: #ffffff; color: #160306; border-radius: 50px; padding: 0.8rem 2rem; font-family: var(--font-sans); font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">Book a Discovery Call</a>
+          <a href="index.html" class="btn" style="background-color: transparent; color: #ffffff; border: 1px solid rgba(255,255,255,0.3); border-radius: 50px; padding: 0.8rem 2rem; font-family: var(--font-sans); font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.borderColor='#ffffff'; this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.3)'; this.style.transform='translateY(0)'">See How We Work</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-5 mb-4 mb-lg-0 pr-lg-5">
+          <a href="index.html" class="footer-logo text-decoration-none"><img src="assets/logo/logo.webp" alt="STACKLY Logo" height="40" style="filter: invert(1);"></a>
+          <p class="mt-4" style="max-width: 300px;">Executive coaching for leaders navigating the decisions that define them. Based in Chicago, working worldwide.</p>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h5 style="color: #FF4D6D;">Site</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Journal</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h5 style="color: #FF4D6D;">Account</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="blog.html">Journal</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5 style="color: #FF4D6D;">Connect</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="mailto:hello@stackly.com">hello@stackly.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row pt-4 border-top" style="border-color: rgba(255,255,255,0.1) !important;">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="small m-0">&copy; 2026 STACKLY Executive Coaching. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+          <a href="#" class="small me-3">Privacy Policy</a>
+          <a href="#" class="small">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <script src="js/loader.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

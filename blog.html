@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal | STACKLY Executive Coaching</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Michroma&display=swap" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <style>
+    .blog-card {
+      transition: var(--transition-fast);
+      border: 1px solid transparent;
+    }
+    .blog-card:hover {
+      border-color: var(--color-border);
+    }
+    .blog-card-img-wrap {
+      overflow: hidden;
+      border-radius: var(--border-radius-sm);
+    }
+    .blog-card-img-wrap img {
+      transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    .blog-card:hover .blog-card-img-wrap img {
+      transform: scale(1.05);
+    }
+    .blog-card-arrow {
+      transition: var(--transition-fast);
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    .blog-card:hover .blog-card-arrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .blog-title {
+      transition: var(--transition-fast);
+    }
+    .blog-card:hover .blog-title {
+      color: var(--color-burgundy);
+    }
+    /* New filter and hover styles */
+    .filter-btn {
+      color: #24191A;
+      background-color: white;
+      border: 1px solid #D8D0C4 !important;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.3s ease;
+    }
+    .filter-btn:hover {
+      background-color: #f8f3ea;
+    }
+    .filter-btn.active {
+      background-color: #c6727a !important;
+      color: white !important;
+      border-color: #c6727a !important;
+    }
+    .article-card-hover {
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .article-card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08) !important;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="loader-logo"><img src="assets/logo/logo.webp" alt="STACKLY Logo" height="60" style="filter: invert(1);"></div>
+    <div class="loader-line-container"><div class="loader-line"></div></div>
+    <div class="loader-percentage">0%</div>
+  </div>
+  <div id="page-transition"></div>
+
+  <!-- Global Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <!-- Navbar Content -->
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-3" href="index.html" style="text-decoration: none;">
+        <img src="assets/logo/logo.webp" alt="STACKLY Logo" height="35" style="mix-blend-mode: multiply; filter: brightness(1.1) contrast(1.5);">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header bg-secondary">
+          <img src="assets/logo/logo.webp" alt="STACKLY Logo" height="28" style="mix-blend-mode: multiply; filter: brightness(1.1) contrast(1.5);">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <div class="d-flex flex-column flex-lg-row gap-4 align-items-lg-center">
+            <a href="login.html" class="text-decoration-none navbar-login-link">Log in</a>
+            <a href="signup.html" class="text-decoration-none navbar-start-btn">Start Coaching</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="position-relative overflow-hidden">
+    <!-- SWIRL BACKGROUND -->
+    <img src="assets/images/swirl.webp" alt="Abstract Swirl" class="d-none d-lg-block position-absolute" style="right: -15%; top: -20px; height: 900px; width: auto; z-index: 0; pointer-events: none; mix-blend-mode: darken; -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%); mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);" data-aos="zoom-out" data-aos-duration="2000">
+
+    <!-- HERO -->
+    <section class="section-padding position-relative z-1" style="padding-top: 150px; padding-bottom: 50px;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 position-relative">
+            <span class="eyebrow hide-initial text-reveal mb-3" style="visibility: visible; opacity: 1; color: #c6727a; letter-spacing: 0.15em;">- The Journal</span>
+            <h1 class="display-3 fw-normal hide-initial text-reveal mb-4" style="visibility: visible; opacity: 1; line-height: 1.2; font-family: var(--font-serif); font-weight: 700; color: #1a1614; font-size: clamp(2.5rem, 4vw, 3.5rem);">
+              Notes from the room, on<br>the habits that<br>
+              <span class="serif-italic-highlight" style="font-size: 1em; color: #c6727a; font-weight: 500;">hold up under pressure</span>
+            </h1>
+            <p class="pe-lg-5" style="font-size: 0.95rem; font-family: var(--font-serif); max-width: 480px; line-height: 1.6; color: #1a1614;">
+              Short, specific pieces — no listicles, no motivational filler. Written for people who are already senior and just want the sharpest version of the idea.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED ARTICLE -->
+    <section class="pb-5 position-relative z-2" style="margin-top: -30px;">
+      <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="rounded d-flex flex-column flex-lg-row align-items-stretch" style="background-color: #F8F6F1; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+          <div class="w-100 w-lg-50 position-relative">
+            <img src="assets/images/question.webp" alt="Featured Article" class="img-fluid w-100 h-100 object-fit-cover" style="min-height: 350px;">
+          </div>
+          <div class="w-100 w-lg-50 p-4 p-md-5 p-lg-5 d-flex flex-column justify-content-center">
+            <div class="mb-4">
+              <span class="eyebrow m-0 d-inline-block" style="color: #716866; border: 1px solid #D8D0C4; border-radius: 50px; padding: 0.4rem 1.2rem; letter-spacing: 0.15em; font-size: 0.65rem;">Featured &middot; Decision-Making</span>
+            </div>
+            <h2 class="mb-3" style="font-family: var(--font-serif); color: #1a1614; font-weight: 700; font-size: 1.5rem; line-height: 1.4; max-width: 400px;">Why the best executives ask fewer questions in the room, not more</h2>
+            <p class="mb-4" style="font-family: var(--font-serif); font-size: 0.9rem; line-height: 1.6; color: #1a1614; max-width: 450px;">Most leaders are coached to ask more questions. The ones who run the sharpest meetings do the opposite — they've learned exactly which three questions matter and stop there.</p>
+            <a href="#" class="text-decoration-none fw-semibold" style="color: #c6727a; letter-spacing: 0.15em; text-transform: uppercase; font-size: 0.8rem; font-family: var(--font-sans);">
+              - Read the piece
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTICLE GRID -->
+    <section class="section-padding pt-0">
+      <div class="container">
+        <!-- Filter Section -->
+        <div class="mb-5" data-aos="fade-right">
+          <span class="eyebrow mb-2" style="color: #c6727a;">- Browse by Topic</span>
+          <h2 class="mb-4" style="font-family: var(--font-sans); font-weight: 700; font-size: 2rem; color: #24191A;">Recent pieces.</h2>
+          
+          <div class="d-flex flex-wrap gap-2 mt-4" id="blog-filters">
+            <button class="btn rounded-pill px-4 py-2 filter-btn active" data-filter="all">All</button>
+            <button class="btn rounded-pill px-4 py-2 filter-btn" data-filter="decision-making">Decision-Making</button>
+            <button class="btn rounded-pill px-4 py-2 filter-btn" data-filter="teams">Teams</button>
+            <button class="btn rounded-pill px-4 py-2 filter-btn" data-filter="transitions">Transitions</button>
+            <button class="btn rounded-pill px-4 py-2 filter-btn" data-filter="communication">Communication</button>
+          </div>
+        </div>
+
+        <div class="row g-4" id="articles-container">
+          <!-- Article 1 -->
+          <div class="col-lg-4 col-md-6 article-item" data-category="teams" data-aos="fade-up" data-aos-delay="0">
+            <a href="#" class="text-decoration-none d-block bg-white p-4 p-md-5 rounded shadow-sm h-100 article-card-hover">
+              <span class="eyebrow mb-3 d-block" style="color: #c6727a; font-size: 0.8rem;">Teams</span>
+              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-sans); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">The offsite fixed nothing, and here's why</h4>
+              <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6; color: #555;">Alignment built in a retreat rarely survives contact with a normal Tuesday. What actually changes team behavior looks nothing like a retreat.</p>
+            </a>
+          </div>
+          <!-- Article 2 -->
+          <div class="col-lg-4 col-md-6 article-item" data-category="transitions" data-aos="fade-up" data-aos-delay="100">
+            <a href="#" class="text-decoration-none d-block bg-white p-4 p-md-5 rounded shadow-sm h-100 article-card-hover">
+              <span class="eyebrow mb-3 d-block" style="color: #c6727a; font-size: 0.8rem;">Transitions</span>
+              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-sans); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">Your first 30 days should have almost no decisions in it</h4>
+              <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6; color: #555;">New leaders rush to prove themselves with early calls. The ones who last longer spend the first month mapping the terrain instead.</p>
+            </a>
+          </div>
+          <!-- Article 3 -->
+          <div class="col-lg-4 col-md-6 article-item" data-category="communication" data-aos="fade-up" data-aos-delay="200">
+            <a href="#" class="text-decoration-none d-block bg-white p-4 p-md-5 rounded shadow-sm h-100 article-card-hover">
+              <span class="eyebrow mb-3 d-block" style="color: #c6727a; font-size: 0.8rem;">Communication</span>
+              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-sans); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">The feedback you're not getting anymore, and how to ask for it back</h4>
+              <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6; color: #555;">Seniority filters out the very input you need most. A practical way to re-open the channel without making it awkward.</p>
+            </a>
+          </div>
+          <!-- Article 4 -->
+          <div class="col-lg-4 col-md-6 article-item" data-category="decision-making" data-aos="fade-up" data-aos-delay="0">
+            <a href="#" class="text-decoration-none d-block bg-white p-4 p-md-5 rounded shadow-sm h-100 article-card-hover">
+              <span class="eyebrow mb-3 d-block" style="color: #c6727a; font-size: 0.8rem;">Decisions</span>
+              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-sans); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">Delegation isn't handing off tasks — it's handing off judgment</h4>
+              <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6; color: #555;">Most delegation fails because the task moves but the decision-making authority quietly doesn't.</p>
+            </a>
+          </div>
+          <!-- Article 5 -->
+          <div class="col-lg-4 col-md-6 article-item" data-category="teams" data-aos="fade-up" data-aos-delay="100">
+            <a href="#" class="text-decoration-none d-block bg-white p-4 p-md-5 rounded shadow-sm h-100 article-card-hover">
+              <span class="eyebrow mb-3 d-block" style="color: #c6727a; font-size: 0.8rem;">Teams</span>
+              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-sans); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">What a genuinely aligned leadership team sounds like</h4>
+              <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6; color: #555;">It's quieter than you'd expect, and the disagreement happens earlier, not later, in the process.</p>
+            </a>
+          </div>
+          <!-- Article 6 -->
+          <div class="col-lg-4 col-md-6 article-item" data-category="communication" data-aos="fade-up" data-aos-delay="200">
+            <a href="#" class="text-decoration-none d-block bg-white p-4 p-md-5 rounded shadow-sm h-100 article-card-hover">
+              <span class="eyebrow mb-3 d-block" style="color: #c6727a; font-size: 0.8rem;">Communication</span>
+              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-sans); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">Delivering hard news without rehearsing the apology first</h4>
+              <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6; color: #555;">A short structure for conversations you've been avoiding, built around clarity rather than cushioning.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER / BOTTOM BANNER -->
+    <section class="py-5" style="background-color: #A34E5F;">
+      <div class="container py-5" data-aos="fade-up">
+        <span class="eyebrow mb-3" style="color: rgba(255,255,255,0.7); letter-spacing: 0.1em;">- Monthly, No Filler</span>
+        <h2 class="text-white m-0" style="font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 3rem); font-weight: 500; line-height: 1.2; max-width: 800px;">
+          One idea a month, worth the four minutes it takes to read.
+        </h2>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section-padding text-white text-center position-relative" style="background-color: var(--color-footer); overflow: hidden;">
+      <div class="container position-relative z-1" data-aos="zoom-in" data-aos-duration="1200">
+        <h2 class="display-4 text-white mb-4">A 30-minute call tells us both if this is a fit.</h2>
+        <p class="lead mx-auto mb-5" style="max-width: 600px; color: rgba(255,255,255,0.7);">
+          No pitch, no obligation — just a conversation about where you're stuck and whether STACKLY is built to help with it.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="contact.html" class="btn-primary-custom magnetic-btn" style="background-color: var(--color-white); color: var(--color-footer); border-color: var(--color-white);">
+            <span>Book a Discovery Call</span>
+          </a>
+          <a href="services.html" class="btn-secondary-custom magnetic-btn text-white" style="border-color: rgba(255,255,255,0.3);">
+            <span>See How We Work</span>
+          </a>
+        </div>
+      </div>
+      <!-- Decorative background -->
+      <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10 mouse-parallax" data-mouse-factor="0.2" style="background-image: radial-gradient(circle at center, var(--color-burgundy) 0%, transparent 60%);"></div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-5 mb-4 mb-lg-0 pr-lg-5">
+          <a href="index.html" class="footer-logo text-decoration-none"><img src="assets/logo/logo.webp" alt="STACKLY Logo" height="40" style="filter: invert(1);"></a>
+          <p class="mt-4" style="max-width: 300px;">Executive coaching for leaders navigating the decisions that define them. Based in Chicago, working worldwide.</p>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h5 style="color: #FF4D6D;">Site</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Journal</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h5 style="color: #FF4D6D;">Account</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="blog.html">Journal</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5 style="color: #FF4D6D;">Connect</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="mailto:hello@stackly.com">hello@stackly.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row pt-4 border-top" style="border-color: rgba(255,255,255,0.1) !important;">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="small m-0">&copy; 2026 STACKLY Executive Coaching. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+          <a href="#" class="small me-3">Privacy Policy</a>
+          <a href="#" class="small">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <script src="js/loader.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/main.js"></script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const filters = document.querySelectorAll(".filter-btn");
+      const articles = document.querySelectorAll(".article-item");
+
+      filters.forEach(btn => {
+        btn.addEventListener("click", () => {
+          // Remove active class from all
+          filters.forEach(f => f.classList.remove("active"));
+          // Add active class to clicked
+          btn.classList.add("active");
+
+          const filterValue = btn.getAttribute("data-filter");
+
+          articles.forEach(article => {
+            if (filterValue === "all" || article.getAttribute("data-category") === filterValue) {
+              article.style.display = "block";
+              
+              // Optional: reset animation if using AOS or simple fade
+              article.style.animation = 'none';
+              article.offsetHeight; /* trigger reflow */
+              article.style.animation = null; 
+            } else {
+              article.style.display = "none";
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+

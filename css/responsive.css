@@ -1,0 +1,117 @@
+/* 
+===================================================
+RESPONSIVE ADJUSTMENTS
+=================================================== 
+*/
+
+/* Tablet (Large) */
+@media (max-width: 1199.98px) {
+  :root {
+    --section-padding: 6rem 0;
+  }
+}
+
+/* Tablet (Portrait) */
+@media (max-width: 991.98px) {
+  :root {
+    --section-padding: 5rem 0;
+  }
+  
+  .navbar-custom {
+    padding: 1rem 0;
+  }
+  
+  .hero-img-container {
+    min-height: 400px;
+    margin-top: 3rem;
+  }
+  
+  .process-timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .process-line {
+    display: none;
+  }
+  
+  .process-line-progress {
+    display: none;
+  }
+  
+  .process-step {
+    opacity: 1;
+    border-left: 2px solid var(--color-border);
+    padding-left: 1.5rem;
+  }
+  
+  .process-step.active {
+    border-left-color: var(--color-burgundy);
+  }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  :root {
+    --section-padding: 4rem 0;
+  }
+  
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+  
+  .btn-primary-custom,
+  .btn-secondary-custom {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-custom {
+    padding: 4rem 0 2rem;
+    text-align: center;
+  }
+  
+  .footer-custom .row > div {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 575.98px) {
+  .premium-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .hero-img-container {
+    min-height: 300px;
+  }
+}
+
+/* Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  #preloader {
+    display: none !important;
+  }
+  
+  .clip-reveal, .clip-reveal-left {
+    clip-path: none !important;
+  }
+  
+  .hide-initial {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  .split-line .split-line-inner {
+    transform: translateY(0) !important;
+  }
+}
