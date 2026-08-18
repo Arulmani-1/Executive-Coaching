@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | 404</title>
+  <meta name="description" content="You've ventured into uncharted territory.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #F2EDE3;
+      color: #24191A;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+
+    .container-404 {
+      text-align: center;
+      padding: 2rem;
+      z-index: 2;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .glitch-404 {
+      position: relative;
+      font-size: clamp(8rem, 20vw, 16rem);
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 1rem;
+      color: #0a0a0a;
+      text-shadow: 0 0 60px rgba(0, 255, 204, 0.3);
+      display: inline-block;
+      letter-spacing: -5px;
+      animation: jump404 2s ease-in-out infinite;
+    }
+
+    .glitch-404::before {
+      content: "404";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #ff0055;
+      clip-path: polygon(0 15%, 100% 15%, 100% 30%, 0 30%);
+      text-shadow: none;
+      transform: translateX(-5px);
+    }
+
+    .earth-globe {
+      position: absolute;
+      width: 12%;
+      height: 18%;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/2/22/Earth_Western_Hemisphere_transparent_background.png') no-repeat center center;
+      background-size: contain;
+      top: 18%;
+      left: 55%;
+      transform: translateX(-50%);
+      z-index: -1;
+      opacity: 0.9;
+    }
+
+    .title-404 {
+      color: #B65068;
+      font-size: clamp(1.5rem, 4vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      animation: slideTitle 3s ease-in-out infinite;
+      display: inline-block;
+    }
+
+    .text-404 {
+      font-size: 1.15rem;
+      max-width: 550px;
+      margin: 0 auto 3.5rem auto;
+      line-height: 1.6;
+      color: #716866;
+    }
+
+    .buttons-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .btn-404-outline {
+      background-color: transparent;
+      border: 1px solid #24191A;
+      color: #24191A;
+      padding: 0.8rem 2rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .btn-404-outline:hover {
+      border-color: #24191A;
+      background-color: rgba(36,25,26,0.05);
+      color: #24191A;
+    }
+
+    .btn-404-solid {
+      background-color: #B65068;
+      border: 1px solid #B65068;
+      color: #ffffff;
+      padding: 0.8rem 2rem;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 0 10px rgba(182, 80, 104, 0.2);
+    }
+
+    .btn-404-solid:hover {
+      background-color: #9c4558;
+      box-shadow: 0 0 20px rgba(182, 80, 104, 0.5);
+      color: #ffffff;
+    }
+
+    @keyframes jump404 {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-25px); }
+    }
+
+    @keyframes slideTitle {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(20px); }
+      75% { transform: translateX(-20px); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-404">
+    <div class="glitch-404">
+      404
+      <div class="earth-globe"></div>
+    </div>
+    
+    <h1 class="title-404">PAGE NOT FOUND</h1>
+    
+    <p class="text-404">
+      You've ventured into uncharted territory. The page you're looking for doesn't exist or has been moved to another dimension.
+    </p>
+    
+    <div class="buttons-wrapper">
+      <a href="javascript:history.back()" class="btn-404-outline">
+        &larr; GO BACK
+      </a>
+      <a href="index.html" class="btn-404-solid">
+        GO TO HOME &rarr;
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
