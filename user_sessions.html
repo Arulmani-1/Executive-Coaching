@@ -162,13 +162,13 @@
       document.getElementById('sidebar').classList.add('show');
       document.getElementById('sidebarOverlay').classList.add('show');
       document.body.style.overflow = 'hidden'; // Stop background scrolling
-      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
     });
     document.getElementById('sidebarOverlay').addEventListener('click', function() {
       document.getElementById('sidebar').classList.remove('show');
       this.classList.remove('show');
       document.body.style.overflow = ''; // Restore background scrolling
-      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
     });
     document.getElementById('sidebarOverlay').addEventListener('touchmove', function(e) {
       e.preventDefault();
