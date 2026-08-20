@@ -129,9 +129,23 @@ document.addEventListener("preloaderComplete", () => {
     });
   };
 
+  // 5. Timeline Scroll Animation
+  const setupTimeline = () => {
+    const timelineSteps = document.querySelectorAll('.timeline-step');
+    timelineSteps.forEach((step) => {
+      ScrollTrigger.create({
+        trigger: step,
+        start: "top 65%",
+        onEnter: () => step.classList.add('active'),
+        onLeaveBack: () => step.classList.remove('active')
+      });
+    });
+  };
+
   // Initialize all
   setupTextReveal();
   setupImageReveal();
   setupParallax();
   setupCounters();
+  setupTimeline();
 });

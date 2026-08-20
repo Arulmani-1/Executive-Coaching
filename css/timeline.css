@@ -1,0 +1,164 @@
+.steps-section {
+    background-color: #F7F5EB;
+    position: relative;
+}
+
+/* Badge */
+.steps-badge {
+    background-color: #E8F5E9;
+    color: #2E7D32;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+/* Float Card */
+.steps-float-card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 3rem 2rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-top: 2rem;
+}
+
+.steps-float-card h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.steps-float-card p {
+    color: #555;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.steps-btn {
+    background-color: #3F63FE;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.steps-btn:hover {
+    background-color: #3250d4;
+    color: white;
+}
+
+/* Timeline */
+.timeline-container {
+    position: relative;
+    padding-left: 70px;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 23px;
+    top: 30px;
+    bottom: 30px;
+    width: 2px;
+    background-color: #D4D4D4;
+    z-index: 1;
+}
+
+.timeline-step {
+    position: relative;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.timeline-step:last-child {
+    margin-bottom: 0;
+}
+
+.step-circle {
+    position: absolute;
+    left: -70px;
+    top: 20px; 
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #E0E0E0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.step-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.step-card::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 34px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #fff;
+    transition: all 0.3s ease;
+}
+
+.step-card h5 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #222;
+    transition: all 0.3s ease;
+}
+
+.step-card p {
+    color: #666;
+    margin: 0;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+/* Active State (Triggered by JS on Scroll) */
+.timeline-step.active .step-circle,
+.timeline-step:hover .step-circle {
+    background-color: #3F63FE;
+    color: #fff;
+}
+
+.timeline-step.active .step-card,
+.timeline-step:hover .step-card {
+    background-color: #3F63FE;
+}
+
+.timeline-step.active .step-card::before,
+.timeline-step:hover .step-card::before {
+    border-right-color: #3F63FE;
+}
+
+.timeline-step.active .step-card h5,
+.timeline-step.active .step-card p,
+.timeline-step:hover .step-card h5,
+.timeline-step:hover .step-card p {
+    color: #fff;
+}

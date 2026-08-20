@@ -76,6 +76,7 @@
       transform: translateY(-8px);
       box-shadow: 0 15px 35px rgba(0,0,0,0.08) !important;
     }
+    
   </style>
 </head>
 <body>
@@ -163,14 +164,14 @@
     </section>
 
     <!-- ARTICLE GRID -->
-    <section class="section-padding pt-0">
-      <div class="container">
+    <section class="section-padding pt-0" style="background-color: #EDE8DF;">
+      <div class="container pb-5" style="padding-top: 40px;">
         <!-- Filter Section -->
         <div class="mb-5" data-aos="fade-right">
-          <span class="eyebrow mb-2" style="color: #c6727a;">- Browse by Topic</span>
-          <h2 class="mb-4" style="font-family: var(--font-sans); font-weight: 700; font-size: 2rem; color: #24191A;">Recent pieces.</h2>
+          <span class="eyebrow mb-2" style="color: #c6727a; letter-spacing: 0.15em; font-size: 0.75rem;">-Browse by Topic</span>
+          <h2 class="mb-4" style="font-family: var(--font-serif); font-weight: 700; font-size: 2.2rem; color: #24191A;">Recent pieces.</h2>
           
-          <div class="d-flex flex-wrap gap-2 mt-4" id="blog-filters">
+          <div class="d-flex flex-wrap gap-3 mt-4" id="blog-filters">
             <button class="btn rounded-pill px-4 py-2 filter-btn active" data-filter="all">All</button>
             <button class="btn rounded-pill px-4 py-2 filter-btn" data-filter="decision-making">Decision-Making</button>
             <button class="btn rounded-pill px-4 py-2 filter-btn" data-filter="teams">Teams</button>
@@ -182,57 +183,178 @@
         <div class="row g-4" id="articles-container">
           <!-- Article 1 -->
           <div class="col-lg-4 col-md-6 article-item" data-category="teams" data-aos="fade-up" data-aos-delay="0">
-            <a href="404.html" class="text-decoration-none d-block bg-white p-4 p-md-5 rounded shadow-sm h-100 article-card-hover">
-              <span class="eyebrow mb-3 d-block" style="color: #c6727a; font-size: 0.8rem;">Teams</span>
-              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-sans); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">The offsite fixed nothing, and here's why</h4>
-              <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6; color: #555;">Alignment built in a retreat rarely survives contact with a normal Tuesday. What actually changes team behavior looks nothing like a retreat.</p>
+            <a href="404.html" class="text-decoration-none d-block rounded h-100 article-card-hover overflow-hidden shadow-sm" style="background-color: #F4F0EA;">
+              <img src="assets/images/blog-1.webp" class="img-fluid w-100 object-fit-cover" style="height: 220px;" alt="Blog image">
+              <div class="p-4 p-md-5">
+                <span class="mb-3 d-block" style="color: #c6727a; font-size: 0.8rem; font-family: var(--font-sans); letter-spacing: 0.1em;">Teams</span>
+              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">The offsite fixed nothing, and here's why</h4>
+              <p class="mb-0" style="font-family: var(--font-serif); font-size: 0.9rem; line-height: 1.6; color: #333;">Alignment built in a retreat rarely survives contact with a normal Tuesday. What actually changes team behavior looks nothing like a retreat.</p>
+              </div>
             </a>
           </div>
           <!-- Article 2 -->
           <div class="col-lg-4 col-md-6 article-item" data-category="transitions" data-aos="fade-up" data-aos-delay="100">
-            <a href="404.html" class="text-decoration-none d-block bg-white p-4 p-md-5 rounded shadow-sm h-100 article-card-hover">
-              <span class="eyebrow mb-3 d-block" style="color: #c6727a; font-size: 0.8rem;">Transitions</span>
-              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-sans); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">Your first 30 days should have almost no decisions in it</h4>
-              <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6; color: #555;">New leaders rush to prove themselves with early calls. The ones who last longer spend the first month mapping the terrain instead.</p>
+            <a href="404.html" class="text-decoration-none d-block rounded h-100 article-card-hover overflow-hidden shadow-sm" style="background-color: #F4F0EA;">
+              <img src="assets/images/blog-2.webp" class="img-fluid w-100 object-fit-cover" style="height: 220px;" alt="Blog image">
+              <div class="p-4 p-md-5">
+                <span class="mb-3 d-block" style="color: #c6727a; font-size: 0.8rem; font-family: var(--font-sans); letter-spacing: 0.1em;">Transitions</span>
+              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">Your first 30 days should have almost no decisions in it</h4>
+              <p class="mb-0" style="font-family: var(--font-serif); font-size: 0.9rem; line-height: 1.6; color: #333;">New leaders rush to prove themselves with early calls. The ones who last longer spend the first month mapping the terrain instead.</p>
+              </div>
             </a>
           </div>
           <!-- Article 3 -->
           <div class="col-lg-4 col-md-6 article-item" data-category="communication" data-aos="fade-up" data-aos-delay="200">
-            <a href="404.html" class="text-decoration-none d-block bg-white p-4 p-md-5 rounded shadow-sm h-100 article-card-hover">
-              <span class="eyebrow mb-3 d-block" style="color: #c6727a; font-size: 0.8rem;">Communication</span>
-              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-sans); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">The feedback you're not getting anymore, and how to ask for it back</h4>
-              <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6; color: #555;">Seniority filters out the very input you need most. A practical way to re-open the channel without making it awkward.</p>
+            <a href="404.html" class="text-decoration-none d-block rounded h-100 article-card-hover overflow-hidden shadow-sm" style="background-color: #F4F0EA;">
+              <img src="assets/images/blog-3.webp" class="img-fluid w-100 object-fit-cover" style="height: 220px;" alt="Blog image">
+              <div class="p-4 p-md-5">
+                <span class="mb-3 d-block" style="color: #c6727a; font-size: 0.8rem; font-family: var(--font-sans); letter-spacing: 0.1em;">Communication</span>
+              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">The feedback you're not getting anymore, and how to ask for it back</h4>
+              <p class="mb-0" style="font-family: var(--font-serif); font-size: 0.9rem; line-height: 1.6; color: #333;">Seniority filters out the very input you need most. A practical way to reopen the channel without making it awkward.</p>
+              </div>
             </a>
           </div>
           <!-- Article 4 -->
           <div class="col-lg-4 col-md-6 article-item" data-category="decision-making" data-aos="fade-up" data-aos-delay="0">
-            <a href="404.html" class="text-decoration-none d-block bg-white p-4 p-md-5 rounded shadow-sm h-100 article-card-hover">
-              <span class="eyebrow mb-3 d-block" style="color: #c6727a; font-size: 0.8rem;">Decisions</span>
-              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-sans); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">Delegation isn't handing off tasks — it's handing off judgment</h4>
-              <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6; color: #555;">Most delegation fails because the task moves but the decision-making authority quietly doesn't.</p>
+            <a href="404.html" class="text-decoration-none d-block rounded h-100 article-card-hover overflow-hidden shadow-sm" style="background-color: #F4F0EA;">
+              <img src="assets/images/blog-4.webp" class="img-fluid w-100 object-fit-cover" style="height: 220px;" alt="Blog image">
+              <div class="p-4 p-md-5">
+                <span class="mb-3 d-block" style="color: #c6727a; font-size: 0.8rem; font-family: var(--font-sans); letter-spacing: 0.1em;">Decisions</span>
+              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">Delegation isn't handing off tasks — it's handing off judgment</h4>
+              <p class="mb-0" style="font-family: var(--font-serif); font-size: 0.9rem; line-height: 1.6; color: #333;">Most delegation fails because the task moves but the decision-making authority quietly doesn't.</p>
+              </div>
             </a>
           </div>
           <!-- Article 5 -->
           <div class="col-lg-4 col-md-6 article-item" data-category="teams" data-aos="fade-up" data-aos-delay="100">
-            <a href="404.html" class="text-decoration-none d-block bg-white p-4 p-md-5 rounded shadow-sm h-100 article-card-hover">
-              <span class="eyebrow mb-3 d-block" style="color: #c6727a; font-size: 0.8rem;">Teams</span>
-              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-sans); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">What a genuinely aligned leadership team sounds like</h4>
-              <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6; color: #555;">It's quieter than you'd expect, and the disagreement happens earlier, not later, in the process.</p>
+            <a href="404.html" class="text-decoration-none d-block rounded h-100 article-card-hover overflow-hidden shadow-sm" style="background-color: #F4F0EA;">
+              <img src="assets/images/promo.webp" class="img-fluid w-100 object-fit-cover" style="height: 220px;" alt="Blog image">
+              <div class="p-4 p-md-5">
+                <span class="mb-3 d-block" style="color: #c6727a; font-size: 0.8rem; font-family: var(--font-sans); letter-spacing: 0.1em;">Teams</span>
+              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">What a genuinely aligned leadership team sounds like</h4>
+              <p class="mb-0" style="font-family: var(--font-serif); font-size: 0.9rem; line-height: 1.6; color: #333;">It's quieter than you'd expect, and the disagreement happens earlier, not later, in the process.</p>
+              </div>
             </a>
           </div>
           <!-- Article 6 -->
           <div class="col-lg-4 col-md-6 article-item" data-category="communication" data-aos="fade-up" data-aos-delay="200">
-            <a href="404.html" class="text-decoration-none d-block bg-white p-4 p-md-5 rounded shadow-sm h-100 article-card-hover">
-              <span class="eyebrow mb-3 d-block" style="color: #c6727a; font-size: 0.8rem;">Communication</span>
-              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-sans); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">Delivering hard news without rehearsing the apology first</h4>
-              <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6; color: #555;">A short structure for conversations you've been avoiding, built around clarity rather than cushioning.</p>
+            <a href="404.html" class="text-decoration-none d-block rounded h-100 article-card-hover overflow-hidden shadow-sm" style="background-color: #F4F0EA;">
+              <img src="assets/images/help-bg.webp" class="img-fluid w-100 object-fit-cover" style="height: 220px;" alt="Blog image">
+              <div class="p-4 p-md-5">
+                <span class="mb-3 d-block" style="color: #c6727a; font-size: 0.8rem; font-family: var(--font-sans); letter-spacing: 0.1em;">Communication</span>
+              <h4 class="mb-3" style="color: #24191A; font-family: var(--font-serif); font-weight: 700; font-size: 1.25rem; line-height: 1.4;">Delivering hard news without rehearsing the apology first</h4>
+              <p class="mb-0" style="font-family: var(--font-serif); font-size: 0.9rem; line-height: 1.6; color: #333;">A short structure for conversations you've been avoiding, built around clarity rather than cushioning.</p>
+              </div>
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- NEWSLETTER / BOTTOM BANNER -->
+    
+
+    <!-- OLDER POSTS GRID -->
+    <section class="section-padding" style="background-color: #ffffff;">
+      <div class="container">
+        <!-- Top Row (2 posts) -->
+        <div class="row g-5 mb-5">
+          <!-- Large Post -->
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="0">
+            <div class="card border-0 rounded-0 h-100 article-card-hover" style="background: transparent;">
+              <img src="assets/images/journal_room.webp" class="card-img-top rounded-0 object-fit-cover w-100" style="height: 400px;" alt="Inspiring Truths">
+              <div class="card-body px-4 py-4">
+                <h3 class="card-title fw-bold mb-4" style="font-family: var(--font-sans); color: #24191A; font-size: 1.75rem;">Stop Ignoring These 7 Inspiring Truths</h3>
+                <div class="d-flex align-items-center flex-wrap gap-4 mb-4 text-muted" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;">
+                  <span class="rounded-pill border px-3 py-1" style="color: #24191A; border-color: #cccccc !important;">LIFE</span>
+                  <span><i class="bi bi-calendar"></i> October 14, 2018</span>
+                  <span class="text-dark fw-bold"><i class="bi bi-heart"></i> 6 LIKES</span>
+                  
+                </div>
+                <p class="card-text text-muted mb-4" style="font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.6; max-width: 600px;">People know who they have the potential to be. The challenge is seeing that process through. Self-development is an art. It takes time. It requires patience. It asks you to step outside your comfort zone. It...</p>
+                <a href="404.html" class="btn btn-outline-dark rounded-pill px-4 py-2" style="font-size: 0.75rem; font-weight: 600; letter-spacing: 1px;">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <!-- Small Post Top -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card border-0 rounded-0 h-100 article-card-hover" style="background: transparent;">
+              <img src="assets/images/older-2.webp" class="card-img-top rounded-0 object-fit-cover w-100" style="height: 250px;" alt="1% Better">
+              <div class="card-body px-4 py-4">
+                <h4 class="card-title fw-bold mb-4" style="font-family: var(--font-sans); color: #24191A; font-size: 1.25rem;">How to be 1% Better Every Day</h4>
+                <div class="d-flex align-items-center flex-wrap gap-3 mb-4 text-muted" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;">
+                  <span class="rounded-pill border px-3 py-1" style="color: #24191A; border-color: #cccccc !important;">IMPROVE</span>
+                  <span><i class="bi bi-calendar"></i> October 14, 2018</span>
+                  <span class="text-dark fw-bold"><i class="bi bi-heart"></i> 4 LIKES</span>
+                  
+                </div>
+                <p class="card-text text-muted mb-4" style="font-family: var(--font-serif); font-size: 0.9rem; line-height: 1.6;">"Compounding is the greatest mathematical discovery of all time." — Albert Einstein The quest to become a better version of yourself often feels like a roller coaster ride. It's hard. And it's usually so uneven...</p>
+                <a href="404.html" class="btn btn-outline-dark rounded-pill px-4 py-2" style="font-size: 0.75rem; font-weight: 600; letter-spacing: 1px;">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Row (3 posts) -->
+        <div class="row g-5 mb-5">
+          <!-- Small Post Bottom 1 -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="card border-0 rounded-0 h-100 article-card-hover" style="background: transparent;">
+              <img src="assets/images/older-3.webp" class="card-img-top rounded-0 object-fit-cover w-100" style="height: 250px;" alt="Self-Aware">
+              <div class="card-body px-4 py-4">
+                <h4 class="card-title fw-bold mb-4" style="font-family: var(--font-sans); color: #24191A; font-size: 1.25rem;">How To Become Ridiculously Self-Aware In 20 Minutes</h4>
+                <div class="d-flex align-items-center flex-wrap gap-3 mb-4 text-muted" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;">
+                  <span class="rounded-pill border px-3 py-1" style="color: #24191A; border-color: #cccccc !important;">LIFE</span>
+                  <span><i class="bi bi-calendar"></i> October 13, 2018</span>
+                  <span class="text-dark fw-bold"><i class="bi bi-heart"></i> 6 LIKES</span>
+                  
+                </div>
+                <p class="card-text text-muted mb-4" style="font-family: var(--font-serif); font-size: 0.9rem; line-height: 1.6;">Four years ago my sister got me something that would dramatically alter the direction of my life. In fact, it was probably the most influential gift I've ever received. It would help me find my...</p>
+                <a href="404.html" class="btn btn-outline-dark rounded-pill px-4 py-2" style="font-size: 0.75rem; font-weight: 600; letter-spacing: 1px;">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <!-- Small Post Bottom 2 -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card border-0 rounded-0 h-100 article-card-hover" style="background: transparent;">
+              <img src="assets/images/older-4.webp" class="card-img-top rounded-0 object-fit-cover w-100" style="height: 250px;" alt="Self-Improvement Anyway">
+              <div class="card-body px-4 py-4">
+                <h4 class="card-title fw-bold mb-4" style="font-family: var(--font-sans); color: #24191A; font-size: 1.25rem;">What's the Point of Self-Improvement Anyway?</h4>
+                <div class="d-flex align-items-center flex-wrap gap-3 mb-4 text-muted" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;">
+                  <span class="rounded-pill border px-3 py-1" style="color: #24191A; border-color: #cccccc !important;">LIFE</span>
+                  <span><i class="bi bi-calendar"></i> September 8, 2018</span>
+                  <span class="text-dark fw-bold"><i class="bi bi-heart"></i> 5 LIKES</span>
+                  
+                </div>
+                <p class="card-text text-muted mb-4" style="font-family: var(--font-serif); font-size: 0.9rem; line-height: 1.6;">There's a paradox with self-improvement and it is this: the ultimate goal of all self-improvement is to reach the point where you no longer feel the need to improve yourself. Think about it: The whole...</p>
+                <a href="404.html" class="btn btn-outline-dark rounded-pill px-4 py-2" style="font-size: 0.75rem; font-weight: 600; letter-spacing: 1px;">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <!-- Small Post Bottom 3 -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card border-0 rounded-0 h-100 article-card-hover" style="background: transparent;">
+              <img src="assets/images/older-5.webp" class="card-img-top rounded-0 object-fit-cover w-100" style="height: 250px;" alt="Self-love">
+              <div class="card-body px-4 py-4">
+                <h4 class="card-title fw-bold mb-4" style="font-family: var(--font-sans); color: #24191A; font-size: 1.25rem;">Self-love is the basis for self-improvement</h4>
+                <div class="d-flex align-items-center flex-wrap gap-3 mb-4 text-muted" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;">
+                  <span class="rounded-pill border px-3 py-1" style="color: #24191A; border-color: #cccccc !important;">LIFE</span>
+                  <span><i class="bi bi-calendar"></i> September 8, 2018</span>
+                  <span class="text-dark fw-bold"><i class="bi bi-heart"></i> 4 LIKES</span>
+                  
+                </div>
+                <p class="card-text text-muted mb-4" style="font-family: var(--font-serif); font-size: 0.9rem; line-height: 1.6;">There's a quandary I hear people talk about a lot in the self-improvement world which goes something like this: "Should I keep trying to change, or should I just learn to love myself?" The people...</p>
+                <a href="404.html" class="btn btn-outline-dark rounded-pill px-4 py-2" style="font-size: 0.75rem; font-weight: 600; letter-spacing: 1px;">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-start mt-4 mb-5" data-aos="fade-up">
+          <a href="404.html" class="text-decoration-none fw-bold" style="color: #24191A; letter-spacing: 1px; font-size: 0.8rem;">&mdash; OLDER POSTS</a>
+        </div>
+      </div>
+    </section>
+<!-- NEWSLETTER / BOTTOM BANNER -->
     <section class="py-5" style="background-color: #A34E5F;">
       <div class="container py-5" data-aos="fade-up">
         <span class="eyebrow mb-3" style="color: rgba(255,255,255,0.7); letter-spacing: 0.1em;">- Monthly, No Filler</span>
@@ -272,21 +394,21 @@
           <p class="mt-4" style="max-width: 300px;">Executive coaching for leaders navigating the decisions that define them. Based in Chicago, working worldwide.</p>
         </div>
         <div class="col-lg-2 col-md-4">
-          <h5 style="color: #FF4D6D;">Site</h5>
+          <h5 style="color: #FF4D6D;">Quick Links</h5>
           <ul class="list-unstyled d-flex flex-column gap-2">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="blog.html">Journal</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-4">
-          <h5 style="color: #FF4D6D;">Account</h5>
+          <h5 style="color: #FF4D6D;">Resources</h5>
           <ul class="list-unstyled d-flex flex-column gap-2">
             <li><a href="login.html">Log In</a></li>
             <li><a href="signup.html">Sign Up</a></li>
-            <li><a href="blog.html">Journal</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="404.html">404 Error</a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-4">
