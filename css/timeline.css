@@ -5,8 +5,8 @@
 
 /* Badge */
 .steps-badge {
-    background-color: #E8F5E9;
-    color: #2E7D32;
+    background-color: #FFE5EA;
+    color: #FF4D6D;
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -41,7 +41,7 @@
 }
 
 .steps-btn {
-    background-color: #3F63FE;
+    background-color: #FF4D6D;
     color: white;
     border: none;
     padding: 12px 32px;
@@ -55,7 +55,7 @@
 }
 
 .steps-btn:hover {
-    background-color: #3250d4;
+    background-color: #E63955;
     color: white;
 }
 
@@ -142,18 +142,18 @@
 /* Active State (Triggered by JS on Scroll) */
 .timeline-step.active .step-circle,
 .timeline-step:hover .step-circle {
-    background-color: #3F63FE;
+    background-color: #FF4D6D;
     color: #fff;
 }
 
 .timeline-step.active .step-card,
 .timeline-step:hover .step-card {
-    background-color: #3F63FE;
+    background-color: #FF4D6D;
 }
 
 .timeline-step.active .step-card::before,
 .timeline-step:hover .step-card::before {
-    border-right-color: #3F63FE;
+    border-right-color: #FF4D6D;
 }
 
 .timeline-step.active .step-card h5,

@@ -303,17 +303,21 @@
           <input type="password" id="password" class="form-control-custom" required>
         </div>
         
-        <div class="checkbox-container">
-          <input type="checkbox" id="remember">
-          <label for="remember" class="checkbox-label">Keep me signed in on this device</label>
+        <div class="checkbox-container" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+          <div>
+            <input type="checkbox" id="remember">
+            <label for="remember" class="checkbox-label" style="margin-bottom: 0;">Keep me signed in</label>
+          </div>
+          <a href="404.html" class="forgot-password" style="color: var(--color-burgundy); font-size: 0.85rem; text-decoration: none;">Forgot Password?</a>
         </div>
 
-        <div class="social-divider-row">
+        <button type="submit" id="loginBtn" class="login-btn-custom" style="margin-bottom: 2rem;">Login</button>
+
+        <div class="social-divider-row" style="justify-content: center;">
           <span class="social-divider-text">Or Continue with</span>
-          <a href="404.html" class="forgot-password">Forgot Password?</a>
         </div>
 
-                <div class="social-buttons">
+        <div class="social-buttons">
           <button type="button" class="social-btn" onclick="window.location.href='404.html'">
             <i class="bi bi-google" style="color: #DB4437; font-size: 1.5rem;"></i>
           </button>
@@ -324,8 +328,6 @@
             <i class="bi bi-apple" style="color: #000000; font-size: 1.5rem;"></i>
           </button>
         </div>
-
-        <button type="submit" id="loginBtn" class="login-btn-custom">Login</button>
 
         <div class="signup-text">
           Don't have an account? <a href="signup.html" class="signup-link">Sign up</a>
@@ -348,6 +350,7 @@
           <ul class="list-unstyled d-flex flex-column gap-2">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -357,7 +360,6 @@
           <ul class="list-unstyled d-flex flex-column gap-2">
             <li><a href="login.html">Log In</a></li>
             <li><a href="signup.html">Sign Up</a></li>
-            <li><a href="services.html">Services</a></li>
             <li><a href="404.html">404 Error</a></li>
           </ul>
         </div>
