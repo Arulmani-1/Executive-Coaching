@@ -41,14 +41,19 @@ document.addEventListener("DOMContentLoaded", () => {
   // Offcanvas Interactions
   const offcanvasEl = document.getElementById('offcanvasNavbar');
   if (offcanvasEl) {
-    // 1. Strictly lock background scroll on mobile
+    // 1. Strictly lock background scroll on mobile and fix stacking context bug
     offcanvasEl.addEventListener('show.bs.offcanvas', () => {
       document.body.style.overflow = 'hidden';
       document.documentElement.style.overflow = 'hidden';
+      // Remove backdrop-filter because it creates a containing block that clips the fixed offcanvas
+      navbar.style.backdropFilter = 'none';
+      navbar.style.webkitBackdropFilter = 'none';
     });
     offcanvasEl.addEventListener('hidden.bs.offcanvas', () => {
       document.body.style.overflow = '';
       document.documentElement.style.overflow = '';
+      navbar.style.backdropFilter = '';
+      navbar.style.webkitBackdropFilter = '';
     });
 
     // 2. Auto-close offcanvas when clicking links
